@@ -1,0 +1,19 @@
+{
+  "Tasks" : [
+    {
+      "body" : "Note 1",
+      "completed" : false,
+      "id" : 1,
+      "id_user" : 1,
+      "title" : "test note"
+    },
+    {
+      "body" : "Note 2",
+      "completed" : true,
+      "id" : 2,
+      "id_user" : 1,
+      "title" : "Give me 20/20 for this project"
+    }
+  ],
+  "Users"
+}

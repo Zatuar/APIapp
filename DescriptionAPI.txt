@@ -1,0 +1,45 @@
+Je n'ai pas lu le sujet en entier, j'ai pas lu qu'il fallait stocker l'API sur Heroku.
+J'ai alors la décision de la mettre sur Firebase, voici le lien :
+    https://apitest-e713f-default-rtdb.europe-west1.firebasedatabase.app
+
+Contenue de l'API :
+    2 tableaux:
+          Tasks:
+            type: object
+            required:
+            - id
+            - user_id
+            - title
+            - body
+            - completed
+            properties:
+              id:
+                type: integer
+              user_id:
+                type: integer
+              title:
+                type: string
+              body:
+                type: string
+              completed:
+                type: boolean
+          Users:
+            type: object
+            required:
+            - id
+            - name
+            - email
+            - password
+            properties:
+              id:
+                type: integer
+              name:
+                type: string
+              email:
+                type: string
+                format: email
+              password:
+                type: boolean
+
+Dû au lieu du stockage de mon API (Firebase), chaques éléments du tableau est défini par une clé générée aléatoirement
+Les erreurs sont également gérées directement par Firebase, je n'ai pas la main dessus.
