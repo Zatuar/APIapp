@@ -50,6 +50,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.Holder> {
         View view = LayoutInflater.from(context).inflate(R.layout.row_recyclerview, parent, false);
         return new Holder(view);
     }
+
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int position) {
         final Tasks key = mItems.get(position);
